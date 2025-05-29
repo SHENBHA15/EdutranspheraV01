@@ -51,7 +51,7 @@ class _DriverScreenState extends State<DriverScreen> {
 
   void startSharing() async{
     isSharing = true;
-    await database.child(widget.bus).set({
+    await database.child(widget.bus).update({
       'isRunning': true,
     });
     getLocationAndUpdate();
@@ -63,7 +63,7 @@ class _DriverScreenState extends State<DriverScreen> {
 
   void stopSharing() async{
     isSharing = false;
-    await database.child(widget.bus).set({
+    await database.child(widget.bus).update({
       'isRunning': false,
     });
     locationTimer?.cancel();

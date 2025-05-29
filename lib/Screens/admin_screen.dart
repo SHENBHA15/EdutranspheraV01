@@ -215,6 +215,7 @@ class _AdminScreenState extends State<AdminScreen> {
                     return ListTile(
                       title: Text(key),
                       subtitle: Text("Driver: ${bus['driverName']}, Monitor: ${bus['monitorName']}"),
+                      trailing: bus['Status'] == "Active" ? const Icon(Icons.check_circle, color: Colors.green,) : const Icon(Icons.build_circle, color: Colors.red,)
                     );
                   },
                   onDelete: _deleteBus,
