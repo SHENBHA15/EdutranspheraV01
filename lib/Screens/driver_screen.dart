@@ -207,7 +207,7 @@ class _DriverScreenState extends State<DriverScreen> {
               const SizedBox(width: 8),
               ElevatedButton(
                 onPressed: () async{
-                  final url = Uri.parse("https://busutei.onrender.com/send_sos");
+                  final url = Uri.parse("https://pushnotificationedutransphera.onrender.com/send_sos");
                   final response = await http.post(
                     url,
                     headers: {"Content-Type": "application/json"},
