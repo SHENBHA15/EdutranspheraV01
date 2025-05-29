@@ -149,7 +149,7 @@ class _BusLocationScreenState extends State<BusLocationScreen> {
                     const SizedBox(width: 8),
                     ElevatedButton(
                       onPressed: ()async {
-                        final url = Uri.parse("https://busutei.onrender.com/send-alert");
+                        final url = Uri.parse("https://pushnotificationedutransphera.onrender.com/send-alert");
                         final response = await http.post(
                           url,
                           headers: {"Content-Type": "application/json"},
